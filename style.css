@@ -1,0 +1,24 @@
+#front-page-title {
+vertical-align:middle;
+font-size: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: black 1px solid;
+}
+
+.game-item {
+border: red 2px solid;
+width: 200px;
+height: 200px;
+}
+.page-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.game-item {
+    
+    margin: 4px;
+}
