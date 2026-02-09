@@ -13,12 +13,41 @@ width: 200px;
 height: 200px;
 }
 .page-games {
+    border: green 2px solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
+
+
 .game-item {
-    
+    position: relative;
     margin: 4px;
 }
+
+
+.game-item  > img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: 100%;
+}
+/* .game-item  > img:hover {
+  color: red;
+} */
+
+.item-title {
+    position: absolute;
+    color:white;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fill - This is default. Does not preserve the aspect ratio. The image is resized to fill the container (the image will be stretched or squeezed to fit).
+cover - Preserves the aspect ratio, and the image fills the container. Cuts overflowing content if needed.
+contain - Preserves the aspect ratio, and fits the image inside the container, without cutting - leaves empty space if needed.
+none - The image is not resized.
+scale-down - the image is scaled down to the smallest version of none or contain.
+*/
+/* object-position: 100% 20%*/
